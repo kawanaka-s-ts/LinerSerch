@@ -12,5 +12,12 @@ describe LinearSearch do
         expect(linear_search.run(5, check_array, index)).to eq 4
       end
     end
+
+    context "check_arrayにtargetが含まれていない場合" do
+      it "'見つかりません'を返す" do
+        linear_search = LinearSearch.new
+        expect(linear_search.run(4, check_array, index)).to eq '見つかりません'
+      end
+    end
   end
 end
