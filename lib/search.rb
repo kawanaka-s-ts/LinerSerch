@@ -3,7 +3,12 @@ require "pry"
 class LinearSearch
   attr_accessor :num, :target
 
-  def run(num, target)
+  # runメソッドここから
+  # targetは探したい数値
+  # num_sizeは要素数
+  def run(target, num_size)
+    # 要素を作成
+    num = (1..num_size)
     # 引数numを配列にする
     # numbersに代入
     numbers = num.to_a
