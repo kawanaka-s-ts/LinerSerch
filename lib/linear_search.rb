@@ -2,8 +2,9 @@ class LinearSearch
   # runメソッドここから
   # targetは探したい数値
   # check_arrayは対象の配列
-  # indexは添え字
-  def run(target, check_array, index)
+  def run(target, check_array)
+    # 添え字に0を代入
+    index = 0
     # check_arrayとtargetが異なる間繰り返す
     while check_array[index] != target
       # 添え字の数値を1増やす
