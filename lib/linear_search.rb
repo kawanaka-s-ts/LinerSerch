@@ -11,7 +11,7 @@ class LinearSearch
     # whileここまで
     end
     # 繰り返しが終わった時の添え字を返す
-    return index
+    index
   # runメソッドここまで  
   end
 end
