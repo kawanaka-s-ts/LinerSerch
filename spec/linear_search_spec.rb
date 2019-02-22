@@ -19,5 +19,12 @@ describe LinearSearch do
         expect(linear_search.run(4, check_array, index)).to eq '見つかりません'
       end
     end
+
+    context "targetが数値以外の場合" do
+      it "'探索対象として正しくありません'を返す" do
+        linear_search = LinearSearch.new
+        expect(linear_search.run("5", check_array, index)).to eq '探索対象として正しくありません'
+      end
+    end
   end
 end
