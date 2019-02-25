@@ -3,6 +3,14 @@ class LinearSearch
   # targetは探したい数値
   # check_arrayは対象の配列
   def run(target, check_array)
+    # targetが数値かどうかを判別
+    # targetが数値以外の場合
+    unless target.kind_of?(Integer)
+      # '探索対象として正しくありません'を返す
+      return '探索対象として正しくありません'
+    # targetが数値の場合
+    end
+
     # indexに0を代入
     index = 0 
     # check_arrayとtargetが異なる間繰り返す
