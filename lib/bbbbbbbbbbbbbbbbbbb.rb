@@ -1,3 +1,0 @@
-
-omijya
-kyakumoto
